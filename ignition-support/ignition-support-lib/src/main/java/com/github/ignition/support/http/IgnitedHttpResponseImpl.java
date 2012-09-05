@@ -62,7 +62,7 @@ public class IgnitedHttpResponseImpl implements IgnitedHttpResponse {
         if (entity == null) {
             return null;
         }
-        return EntityUtils.toString(entity);
+        return EntityUtils.toString(entity, "utf8");
     }
 
     @Override
